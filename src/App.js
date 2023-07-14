@@ -1,11 +1,12 @@
 import { Button, Container, Form, Grid, Header, Icon, Segment, Statistic } from 'semantic-ui-react';
 import './App.css';
+import MainHeader from './header-component/MainHeader';
 
 function App() {
   return (
     <div className="App">
       <Container>
-        <Header as="h1" >WebShop</Header>
+       <MainHeader title="WebShop"/>
         <Statistic>
           <Statistic.Label>
             Our Sales
@@ -45,7 +46,6 @@ function App() {
               icon='dollar'
               width={4}
               placeholder='100.00'
-
             >
 
             </Form.Input>
